@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "name": "DEMLİK",
+    "metaphor": "The Cyber-Teahouse",
+    "vision": "A futuristic, high-contrast community hub where traditional conversation meets cyberpunk aesthetics.",
+    "tone": "Bold, Innovative, Sharp, Community-Driven",
+    "aesthetic": "Godly Dark Red - Deep Charcoal backgrounds, Vivid Red accents, Dim White text."
+  },
+  "typography": {
+    "primary_font": "Chivo",
+    "secondary_font": "Manrope",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-bold",
+      "body": "text-base md:text-lg font-normal leading-relaxed text-neutral-300",
+      "small": "text-sm font-medium text-neutral-500 uppercase tracking-widest"
+    },
+    "import_url": "https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Manrope:wght@300;400;500;600;700&display=swap"
+  },
+  "colors": {
+    "palette": {
+      "background": "#09090b",
+      "foreground": "#e5e5e5",
+      "card": "#121212",
+      "card_foreground": "#ffffff",
+      "popover": "#121212",
+      "popover_foreground": "#ffffff",
+      "primary": "#dc2626",
+      "primary_foreground": "#ffffff",
+      "secondary": "#27272a",
+      "secondary_foreground": "#ffffff",
+      "muted": "#27272a",
+      "muted_foreground": "#a1a1aa",
+      "accent": "#dc2626",
+      "accent_foreground": "#ffffff",
+      "destructive": "#7f1d1d",
+      "destructive_foreground": "#ffffff",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#dc2626"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-b from-neutral-950 via-neutral-900 to-red-950/20",
+      "card_hover": "hover:bg-gradient-to-br hover:from-neutral-900 hover:to-red-950/30",
+      "text_glow": "drop-shadow-[0_0_10px_rgba(220,38,38,0.5)]"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "rounded-md",
+    "shadows": {
+      "default": "shadow-lg shadow-black/50",
+      "glow": "shadow-[0_0_20px_-5px_rgba(220,38,38,0.4)]",
+      "card": "shadow-xl shadow-black/40 border border-white/5"
+    },
+    "borders": {
+      "subtle": "border border-white/10",
+      "active": "border-l-4 border-red-600"
+    },
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10"
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-12 md:gap-24",
+      "element_gap": "gap-4 md:gap-6"
+    },
+    "grids": {
+      "bento_marketing": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6",
+      "bookshelf": "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-red-600 hover:bg-red-500 text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]",
+      "secondary": "bg-neutral-800 hover:bg-neutral-700 text-white font-medium py-3 px-8 rounded-md border border-white/10 transition-all",
+      "ghost": "text-neutral-400 hover:text-white hover:bg-white/5 py-2 px-4 rounded-md transition-all"
+    },
+    "cards": {
+      "forum_thread": "bg-neutral-900/50 border border-white/5 p-6 rounded-md hover:border-red-500/30 transition-all group relative overflow-hidden",
+      "book_cover": "aspect-[2/3] bg-neutral-800 rounded-md overflow-hidden relative group shadow-2xl hover:scale-105 transition-transform duration-300",
+      "stat_card": "bg-neutral-900 border border-white/5 p-6 rounded-md flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "bg-neutral-950 border border-white/10 focus:border-red-500 focus:ring-1 focus:ring-red-500 rounded-md p-3 text-white placeholder:text-neutral-600 transition-all"
+    },
+    "badges": {
+      "vip": "bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wider",
+      "plus": "bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wider",
+      "admin": "bg-red-600 text-white font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wider shadow-[0_0_10px_rgba(220,38,38,0.5)]"
+    }
+  },
+  "images": {
+    "hero_background": "https://images.unsplash.com/photo-1628944682134-ac69fcd9cfd3?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "book_covers": [
+      {
+        "url": "https://images.unsplash.com/photo-1755545730104-3cb4545282b1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "Fantasy"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763771075060-a87c8fbc5fcd?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "History"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759234008322-70456fcf6aec?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "Sci-Fi"
+      }
+    ],
+    "forum_categories": [
+      {
+        "url": "https://images.unsplash.com/photo-1636036704268-017faa3b6557?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "Gaming"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1656536898449-43b7397fd2e9?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "General"
+      }
+    ],
+    "textures": {
+      "noise": "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2UpIiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')",
+      "grid": "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'Chivo' and 'Manrope' fonts immediately in index.css.",
+    "2. THEME: Apply the dark theme variables to tailwind.config.js. Ensure 'darkMode: class' is set.",
+    "3. LAYOUT: Use the 'Bento' grid system for the Forum Categories page. Don't just use simple rows.",
+    "4. COMPONENTS: Use Shadcn for complex interactive elements (Dialog, Dropdown, Form) but style them with the 'Godly Red' palette.",
+    "5. ADMIN: The admin credentials are 'ADMIN' / '31622cMs4128!_'. Add a hint in the login page for development convenience.",
+    "6. BOOKS: The book reader view must be immersive. Hide the header/sidebar when reading.",
+    "7. FORUM: Unread threads must have a distinct visual indicator (e.g., a red left border or a glowing dot).",
+    "8. TESTID: Add 'data-testid' to ALL interactive elements (buttons, inputs, links).",
+    "9. NO TRANSPARENCY: Ensure headers and overlays have a blur backdrop or solid color. No pure transparent backgrounds over content."
+  ],
+  "universal_guidelines": {
+    "do_not_use": [
+      "Generic 'Inter' font for headings",
+      "Pure black (#000000) backgrounds - use #09090b",
+      "Default blue links - use Red or White",
+      "Gradients for text unless it's a very large hero title"
+    ],
+    "must_do": [
+      "Use 2x more padding than you think is necessary",
+      "Add micro-interactions to every button (scale, glow, color shift)",
+      "Use the 'noise' texture overlay on the main background for a premium feel"
+    ]
+  }
+}
