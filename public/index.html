@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demlik - Modern Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginScreen" class="screen active">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>☕ Demlik</h1>
+                <p>Modern Türkçe Chat Uygulaması</p>
+            </div>
+            
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="login">Giriş Yap</button>
+                <button class="tab-btn" data-tab="register">Kayıt Ol</button>
+            </div>
+
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label>Kullanıcı Adı veya E-posta</label>
+                    <input type="text" id="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Giriş Yap</button>
+            </form>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" id="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label>E-posta</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Görünen Ad</label>
+                    <input type="text" id="registerDisplayName">
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="chatScreen" class="screen">
+        <div class="chat-container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>☕ Demlik</h2>
+                    <button id="settingsBtn" class="icon-btn" title="Ayarlar">⚙️</button>
+                </div>
+
+                <div class="user-info">
+                    <div id="userAvatar" class="avatar"></div>
+                    <div class="user-details">
+                        <div id="userDisplayName" class="user-name"></div>
+                        <div id="userStatus" class="user-status">🟢 Çevrimiçi</div>
+                    </div>
+                    <button id="logoutBtn" class="icon-btn" title="Çıkış">🚪</button>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Ara...">
+                </div>
+
+                <div class="sidebar-tabs">
+                    <button class="sidebar-tab active" data-tab="channels">Kanallar</button>
+                    <button class="sidebar-tab" data-tab="users">Kullanıcılar</button>
+                </div>
+
+                <div id="channelsList" class="list-container active">
+                    <div class="list-header">
+                        <span>Kanallar</span>
+                        <button id="createChannelBtn" class="icon-btn">+</button>
+                    </div>
+                    <div id="channelsContent" class="list-content"></div>
+                </div>
+
+                <div id="usersList" class="list-container">
+                    <div class="list-header">
+                        <span>Kullanıcılar</span>
+                    </div>
+                    <div id="usersContent" class="list-content"></div>
+                </div>
+            </div>
+
+            <div class="main-chat">
+                <div class="chat-header">
+                    <div class="chat-title">
+                        <h3 id="chatTitle">Kanal seçin</h3>
+                        <p id="chatDescription"></p>
+                    </div>
+                </div>
+
+                <div id="messagesContainer" class="messages-container">
+                    <div class="welcome-message">
+                        <h2>☕ Demlik'e Hoş Geldiniz!</h2>
+                        <p>Sohbete başlamak için bir kanal seçin.</p>
+                    </div>
+                </div>
+
+                <div class="message-input-container">
+                    <button id="attachBtn" class="icon-btn" title="Dosya Ekle">📎</button>
+                    <input type="file" id="fileInput" style="display: none;">
+                    <input type="text" id="messageInput" placeholder="Mesaj yazın..." disabled>
+                    <button id="emojiBtn" class="icon-btn" title="Emoji">😊</button>
+                    <button id="sendBtn" class="btn-primary" disabled>Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="createChannelModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Yeni Kanal Oluştur</h2>
+                <button class="close-modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <form id="createChannelForm">
+                    <div class="form-group">
+                        <label>Kanal Adı</label>
+                        <input type="text" id="channelName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Açıklama</label>
+                        <textarea id="channelDescription" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Oluştur</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
