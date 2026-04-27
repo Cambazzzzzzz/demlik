@@ -1,44 +1,50 @@
 {
   "name": "demlik",
   "version": "1.0.0",
-  "description": "Modern Türkçe Chat Uygulaması",
+  "description": "DEMLİK - Türk Oyun Dağıtım Platformu",
   "main": "electron.js",
   "scripts": {
     "start": "electron .",
-    "server": "node server.js",
-    "dev": "concurrently \"npm run server\" \"npm start\"",
-    "build": "electron-builder"
+    "dev": "nodemon server.js",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never"
+  },
+  "keywords": ["oyun", "platform", "demlik", "steam"],
+  "author": "DEMLİK Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "bcrypt": "^5.1.1",
+    "express-session": "^1.17.3",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0"
   },
   "build": {
-    "appId": "com.demlik.chat",
-    "productName": "Demlik",
+    "appId": "com.demlik.platform",
+    "productName": "DEMLİK",
     "directories": {
       "output": "dist"
     },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "node_modules/**/*"
+    ],
     "win": {
       "target": "nsis",
-      "icon": "assets/demlik.png"
+      "icon": "assets/icon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
-  },
-  "keywords": ["chat", "messaging", "electron"],
-  "author": "Demlik Team",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "better-sqlite3": "^9.2.2",
-    "multer": "^1.4.5-lts.1",
-    "cloudinary": "^1.41.0",
-    "firebase-admin": "^12.0.0",
-    "cors": "^2.8.5",
-    "bcrypt": "^5.1.1"
-  },
-  "devDependencies": {
-    "electron": "^28.1.0",
-    "electron-builder": "^24.9.1",
-    "concurrently": "^8.2.2"
   }
 }
