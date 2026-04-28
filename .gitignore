@@ -4,7 +4,9 @@ data/*.db-shm
 data/*.db-wal
 data/uploads/*
 !data/.gitkeep
+!data/uploads/.gitkeep
 dist/
 *.log
 .env
 .DS_Store
+package-lock.json
